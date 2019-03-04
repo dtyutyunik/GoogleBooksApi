@@ -3,12 +3,43 @@
 }
 
 .bookContainer{
+  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
-  
+  margin-left: 5%;
+  margin-right: 5%;
+
 }
 
 .individualBooks{
-  width: 50%;
+  width: 49%;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  padding: .3em;
+  display: grid;
+  grid-template-areas:
+  'image author'
+  'image description'
+  'image more';
+}
 
+.author{
+  grid-area: author;
+}
+
+.image{
+  grid-area: image;
+  height: 100%;
+  width: 100%;
+  border: 1px solid red;
+}
+
+
+.description{
+  grid-area: description;
+  padding: .3em;
+
+}
+
+.more{
+  grid-area: more;
 }
